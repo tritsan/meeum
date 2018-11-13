@@ -200,6 +200,20 @@ header .layout-wide {
     }
 }
 
+@media screen and (max-width:800px) {
+    .nav-inner {
+    overflow: hidden;
+    transition: var(--transition-time);
+    }
+
+    .nav-inner[aria-expanded="false"] {
+    max-height: 0;
+    }
+    .nav-inner[aria-expanded="true"] {
+        max-height: 100vh;
+    }
+}
+
 /* ---- FOOTER */
 
 

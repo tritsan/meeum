@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Karla|Rubik');
+
 /* ---- VARIABLES */
+
 :root {
 
 /*  fonts */
---font-default: arial, sans-serif;
---font-heading: georgia, serif;
+--font-default: 'Karla', sans-serif;
+--font-heading: 'Rubik', sans-serif;
 
     /* Colors */
     --color-purple: #4952a3;
@@ -59,6 +62,36 @@ img, video {
 }
 
 /* ---- HEADINGS AND TYPE */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--font-heading);
+    color: var(--strong-text-color);
+}
+
+h1 {
+    font-size: var(--font-size-page-title);
+}
+
+h2 {
+    font-size: var(--font-size-section-title);
+}
+
+h3 {
+    font-size: var(--font-size-sub-title);
+}
+
+a {
+    color: var(--error-color);
+    transition: var(--transition-time);
+}
+
+a:hover {
+    color: var(--strong-text-color);
+}
 
 /* ---- LAYOUTS */
 

@@ -144,6 +144,62 @@ header .layout-wide {
 
 /* ---- NAVIGATION */
 
+.navigation {
+    background-color: var(--alternative-bg-color);
+
+}
+
+.nav-prompt {
+    width: 100%;
+    padding-top: var(--padder);
+    padding-bottom: var(--padder);
+    background-color: var(--alternative-bg-color);
+    color: var(--alternative-text-color);
+    border: none;
+    border-top: 1px solid black;
+}
+.nav-inner {
+    margin-bottom: 0;
+}
+.nav-inner ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-inner li {
+    text-align: center;
+}
+.nav-inner a {
+    color: var(--alternative-text-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px solid var(--border-color);
+    display: block;
+    padding-top: var(--padder);
+    padding-bottom: var(--padder);
+}
+.nav-inner a:hover {
+    color: var(--error-color);
+    border-bottom-color: currentColor;
+}
+
+@media screen and (min-width: 800px) {
+    .nav-prompt {
+        display: none;
+    }
+    .nav-inner ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .navigation {
+        padding-bottom: var(--padder);
+    }
+    .nav-inner a {
+        border-bottom: 3px solid transparent;
+    }
+}
+
 /* ---- FOOTER */
 
 
@@ -184,7 +240,7 @@ footer {
 
 .social-links a {
 display: block;
-tansition: var(--transition-time);
+transition: var(--transition-time);
 }
 
 .social-links a:hover {

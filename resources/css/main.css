@@ -120,6 +120,7 @@ a:hover {
 header {
     background-color: var(--alternative-bg-color);
     padding-top: var(--padder);
+    
 
 }
 
@@ -138,6 +139,7 @@ header .layout-wide {
     color: var(--alternative-text-color);
     font-size: var(--font-size-site-title);
     font-family: var(--font-heading);
+    font-weight: bold;
 
 
 }

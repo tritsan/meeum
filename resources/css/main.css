@@ -191,6 +191,21 @@ tansition: var(--transition-time);
     transform: scale(1.1);
 }
 
+@media screen and (min-width: 800px) {
+    .footer-notices .layout-wide {
+        display: grid;
+        grid-template-columns: 48% 48%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .social-links {
+        text-align: right;
+    }
+    .copyright {
+        text-align: left;
+    }
+}
+
 /* subscripion form */
 label {
     display: block;

@@ -81,6 +81,7 @@ h4,
 h5 {
     font-family: var(--font-heading);
     color: var(--strong-text-color);
+    font-weight: bold;
 }
 
 h1 {
@@ -186,6 +187,11 @@ header .layout-wide {
 }
 .nav-inner a:hover {
     color: var(--error-color);
+    border-bottom-color: currentColor;
+}
+
+.nav-inner .active {
+    font-weight: bold;
     border-bottom-color: currentColor;
 }
 
@@ -314,3 +320,26 @@ input[type="submit"]:hover {
 /* ---- FORMS */
 
 /* ---- MODULES */
+
+@media screen and (min-width: 800px) {
+    .hero-module {
+        position: relative;
+    }
+
+    .hero-module img {
+        width: 100%;
+    }
+
+    .hero-content {
+        position: absolute;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .heading-main {
+        color: var(--color-almost-white);
+    }
+    
+}

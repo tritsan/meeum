@@ -389,3 +389,31 @@ overflow: hidden;
     filter: unset;
     transform: scale(1.05);
 }
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity:1;
+    }
+}
+
+body {
+    animation-name: fadeIn;
+    animation-duration: var(--transition-time);
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.logo-wrapper  a:hover img {
+    animation-name: spin;
+    animation-duration: var(--transition-time);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}

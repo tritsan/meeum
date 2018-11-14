@@ -108,12 +108,17 @@ a:hover {
 /* ---- LAYOUTS */
 
 .layout-wide {
-    margin-botton: var(--spacer-large);
+    margin-bottom: var(--spacer-large);
     padding-left: var(--padder);
     padding-right: var(--padder);
     max-width: var(--area-wide);
     margin-left: auto;
     margin-right: auto;
+}
+
+.layout-full-width {
+    width: 100%;
+    margin-bottom: var(--spacer-large);
 }
 
 /* ---- HEADER */
@@ -340,6 +345,17 @@ input[type="submit"]:hover {
     }
     .heading-main {
         color: var(--color-almost-white);
+        text-shadow: 0px 1px 10px var(--strong-text-color);
     }
-    
+
+}
+
+/* Grid in content area */
+
+@media screen and (min-width:800px);
+
+.content-area-grid {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
 }

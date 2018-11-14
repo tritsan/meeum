@@ -31,3 +31,18 @@ function activeMenu() {
 }
 
 activeMenu();
+
+
+// image gallery
+function imageGallery() {
+   
+    if (!$('.image-gallery').length) {
+        return;
+    }
+
+    $('.image-gallery a').simpleLightbox();
+
+}
+
+imageGallery();
+
